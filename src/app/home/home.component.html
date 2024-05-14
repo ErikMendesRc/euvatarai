@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo à Euvatar.AI</title>
+    <link rel="stylesheet" href="home.component.css">
+</head>
+<body>
+    <img src="assets/euvatarlogo.png" alt="euvatarlogo" class="logo">
+    <div class="container">
+        <div class="welcome-text">
+            <h1>Teletransporte Euvatar</h1>
+            <a class="teletransporte-link" href="/teletransporte" target="_blank">Clique para um novo mundo.</a> <!-- Botão movido abaixo do título -->
+        </div>
+    </div>
+
+    <!-- Sobreposição para exibir a aplicação WebGL -->
+    <div id="chatbot-overlay" class="overlay">
+        <iframe src="https://sparkly-marshmallow-62309e.netlify.app/" allow="microphone" frameborder="0"></iframe> <!-- iframe para exibir a aplicação WebGL -->
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
